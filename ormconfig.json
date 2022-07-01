@@ -1,0 +1,19 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 8000,
+    "username": "root",
+    "password": "",
+    "database": "imdb",
+    "synchronize": true,
+    "logging": true,
+    "migrationsTableName": "migrations",
+    "entities": ["src/entity/**/*.t"],
+    "migrations": ["src/migration/**/*.ts"],
+    "subscribers": ["src/subscriber/**/*.ts"],
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  }
